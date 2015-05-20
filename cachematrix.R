@@ -9,12 +9,12 @@ makeCacheMatrix <- function(x = matrix()) {
     
     # create a sub function set
     set <- function(y) {
-        mat <<- y
+        x <<- y
         m <<- NULL
     }
     
     # create a get function
-    get <- function() mat
+    get <- function() x
     
     # create a set inverse function (cache the inverse)
     setinverse <- function(inv) m <<- inv
